@@ -57,3 +57,4 @@ public class Invoice {
         return "Invoice [id=" + id + ", concepto=" + concepto + ", cantidad=" + cantidad + ", Retención%=" + porcentajeRetencion + "]";
     }
 }
+
