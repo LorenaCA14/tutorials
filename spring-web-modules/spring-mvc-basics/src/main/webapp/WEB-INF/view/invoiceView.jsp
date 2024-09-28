@@ -1,4 +1,5 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <html>
 <head>
 <title>Spring MVC Form Handling</title>
@@ -18,7 +19,7 @@
 		</tr>
 		<tr>
 			<td>Quantity :</td>
-			<td>${cantidad - (porcentajeRetencion * 0.01)}
+			<td><fmt:formatNumber value="${cantidad - (cantidad * porcentajeRetencion * 0.01)}" maxFractionDigits="2"/>
 		</tr>
 	</table>
 </body>
